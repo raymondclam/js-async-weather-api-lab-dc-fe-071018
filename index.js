@@ -1,6 +1,11 @@
-const API_KEY = "YOUR API KEY"
+const API_KEY = "e68984af4783cdfe425e604d390fc92d"
 
 function handleFormSubmit(event) {
+  console.log("== handleFormSubmit ==")
+  event.preventDefault();
+  let city = document.getElementById("city").value;
+  console.log("city:", city);
+  fetchCurrentWeather(city);
   //handle submit event
 }
 
